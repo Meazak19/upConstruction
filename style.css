@@ -230,13 +230,11 @@ input:focus-visible, textarea:focus-visible {
     border: 1px solid rgba(82, 86, 94, 0.2);
     margin: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
 }
 .c1 img{
     width: 100%;
     height: 100%;
 }
-
 
 /* Services */
 .s1 {
@@ -301,16 +299,225 @@ a:hover{
     display: flex;
     align-items: center;
 }
-
 .s1:hover.s1::before {
     background: #feb900;
     transition: .3s;
 }
-
 .s1:hover.s1 h3{
     border-bottom: 4px solid #feb900;
     transition: .3s;
 }
 .s1:hover{
     cursor: pointer;
+}
+
+
+/* ABT SEC */
+
+.abt-img img{ 
+    width: 100%;
+    height: 100%;
+}
+.abt-txt h2::after{
+    content: "";
+    width: 50px;
+    display: block;
+    height: 3px;
+    background: #feb900;
+    left: 0;
+    bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.abt-img {
+    height: 100%;
+}
+.abt-lists i{
+    font-size: 22px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.abt-lists:hover i{
+    background-color: #feb900;
+    transition: .3s;
+    color: #fff;
+}
+.abt-lists{
+    cursor: pointer;
+    margin: 35px 0;
+
+}
+.abt-lists:hover h3{
+    color: #feb900;
+    transition: .3s;
+}
+.abt-lists h3{
+    transition: .3s;
+}
+
+
+
+/* Projects */
+.pro{
+    width: 31%;
+    margin:2% 1%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .2s;
+}
+.pro img{
+    transform: scale(1);
+    transition: .2s;
+}
+.pro:hover img{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.pro:hover .overlay{
+    opacity: 1;
+    transition: .2s;
+    cursor: pointer;
+}
+.oveCon{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.oveCon i{
+    text-align: center !important;
+    font-size: 18px;
+}
+.ovBtn{
+    font-weight: 500;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 10px;
+    transition: 0.3s;
+    margin: 10px;
+    background-color: #feb900;
+    color: #fff;
+    border: 2px solid #feb900;
+    cursor: pointer;
+}
+
+/* Testimonial Sec */
+
+.wid15{
+    width: 15%;
+}
+.wid85{
+    width: 85%;
+    padding-left: 25px;
+}
+.testi i{
+    padding: 15px 0;
+    color: #feb900;
+    font-size: 14px;
+    padding-right: 6px;
+}
+.testi img{
+    box-shadow: 2px 2px 4px;
+    border-radius: 5px;
+}
+.testi{
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 2px 8px 24px, rgba(149, 157, 165, 0.2) -2px -8px 24px;
+    padding: 50px 50px 50px 0px;
+    margin-left: 45px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.d-flex.right {
+    margin-left: -45px;
+}
+.wid31{
+    width: 31%;
+    margin: 2% 1%;
+    display: flex;
+}
+
+
+/* BLOG */
+.blog img{
+    width: 100%;
+    transition: .3s;
+}
+.blog p{
+    padding: 10px 0;
+}
+.blog h3{
+    padding-top: 15px;
+    transition: .3s;
+}
+.blog i{
+    color: #feb900;
+}
+.posr{
+    position: relative;
+    overflow: hidden;
+}
+.blBtn{
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    padding: 4px 10px;
+    transition: 0.3s;
+    background-color: #feb900;
+    color: #fff;
+    border: 2px solid #feb900;
+    cursor: pointer;
+}
+.blog a, .blog a i{
+    font-size: 18px;
+    color: #838893;
+    transition: .3s;
+}
+.blg-cont:hover{
+    cursor: pointer;
+}
+.blg-cont:hover h3, .blg-cont:hover a, .blg-cont:hover a i{
+    color: #feb900;
+    transition: .3s;
+}
+.blg-cont:hover img{
+transform: scale(1.1);
+transition: .3s;
+}
+.bg-footer{
+    background-image:linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./images/footer-bg.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.marTp25{
+    margin-top: 50px;
+}
+.wid25{
+    width: 25%;
+}
+.footer h3{
+    padding-bottom: 25px;
 }
